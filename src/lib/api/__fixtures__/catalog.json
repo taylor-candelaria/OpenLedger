@@ -1,0 +1,304 @@
+{
+ "after": "WzQ1LjMyOTgzOCw2LCJhNDg0MThiOS1kNDRlLTQ0NDMtODY1Ni1jMWU0NjMwOWIyMTQiXQ==",
+ "results": [
+  {
+   "_score": 108.03154,
+   "_sort": [
+    108.03154,
+    2,
+    "090c3231-d87b-43f8-91a1-0f1be8cc96b0"
+   ],
+   "access_level": "public",
+   "dcat": {
+    "@type": "dcat:Dataset",
+    "accessLevel": "public",
+    "contactPoint": {
+     "@type": "vcard:Contact",
+     "fn": "NYC OpenData",
+     "hasEmail": "mailto:no-reply@data.cityofnewyork.us"
+    },
+    "description": "Amount of debt outstanding as of June 30 of each year.\r\n\r\nSOURCES: IBO; New York City Comprehensive Annual Financial Report of the Comptroller (various years); Annual Report of the Comptroller on Capital Debt and Obligations (various years); New York City Municipal Water Finance Authority Comprehensive Annual Financial Reports (various years)\r\nNOTES: 1In determining what to include as outstanding debt of the City of New York, IBO considered: (1) the city's obligation (contractual and moral) to repay the debt, (2) whether the revenues pledged toward the repayment of the debt would have otherwis",
+    "distribution": [
+     {
+      "@type": "dcat:Distribution",
+      "describedBy": "https://data.cityofnewyork.us/api/views/5i9t-mvdt/columns.json",
+      "describedByType": "application/json",
+      "downloadURL": "https://data.cityofnewyork.us/api/v3/views/5i9t-mvdt/query.json?accessType=DOWNLOAD",
+      "mediaType": "application/json"
+     },
+     {
+      "@type": "dcat:Distribution",
+      "describedBy": "https://data.cityofnewyork.us/api/views/5i9t-mvdt/columns.xml",
+      "describedByType": "application/xml",
+      "downloadURL": "https://data.cityofnewyork.us/api/v3/views/5i9t-mvdt/query.xml?accessType=DOWNLOAD",
+      "mediaType": "application/xml"
+     },
+     {
+      "@type": "dcat:Distribution",
+      "downloadURL": "https://data.cityofnewyork.us/api/v3/views/5i9t-mvdt/export.csv?accessType=DOWNLOAD",
+      "mediaType": "text/csv"
+     }
+    ],
+    "identifier": "https://data.cityofnewyork.us/api/views/5i9t-mvdt",
+    "issued": "2021-06-18",
+    "keyword": [
+     "building aid revenue bonds (barbs) (via tfa)",
+     "conduit debt",
+     "general obligation (go)",
+     "municipal assistance corporation (mac)",
+     "municipal water finance authority (mwfa)",
+     "nyc independent budget office (ibo) debt outstanding since fy 2000",
+     "samurai funding corporation (sfc)",
+     "transitional finance authority (tfa) tax secured bonds3",
+     "tsasc"
+    ],
+    "landingPage": "https://data.cityofnewyork.us/d/5i9t-mvdt",
+    "modified": "2021-06-18",
+    "publisher": {
+     "@type": "org:Organization",
+     "name": "data.cityofnewyork.us"
+    },
+    "theme": [
+     "City Government"
+    ],
+    "title": "NYC Independent Budget Office (IBO) Debt Outstanding Since FY 2000"
+   },
+   "description": "Amount of debt outstanding as of June 30 of each year.\r\n\r\nSOURCES: IBO; New York City Comprehensive Annual Financial Report of the Comptroller (various years); Annual Report of the Comptroller on Capital Debt and Obligations (various years); New York City Municipal Water Finance Authority Comprehensive Annual Financial Reports (various years)\r\nNOTES: 1In determining what to include as outstanding debt of the City of New York, IBO considered: (1) the city's obligation (contractual and moral) to repay the debt, (2) whether the revenues pledged toward the repayment of the debt would have otherwis",
+   "distribution_titles": [],
+   "has_download": true,
+   "has_spatial": false,
+   "identifier": "https://data.cityofnewyork.us/api/views/5i9t-mvdt",
+   "keyword": [
+    "building aid revenue bonds (barbs) (via tfa)",
+    "conduit debt",
+    "general obligation (go)",
+    "municipal assistance corporation (mac)",
+    "municipal water finance authority (mwfa)",
+    "nyc independent budget office (ibo) debt outstanding since fy 2000",
+    "samurai funding corporation (sfc)",
+    "transitional finance authority (tfa) tax secured bonds3",
+    "tsasc"
+   ],
+   "last_harvested_date": "2026-09-10T18:30:12.208466",
+   "organization": {
+    "aliases": [
+     ""
+    ],
+    "code_repo_exempt": false,
+    "code_repo_url": null,
+    "description": null,
+    "id": "1149ee63-2fff-494e-82e5-9aace9d3b3bf",
+    "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/city_new_york_ny.png",
+    "name": "City of New York",
+    "organization_type": "City Government",
+    "slug": "nyc-ny"
+   },
+   "parent_identifier": null,
+   "popularity": 2,
+   "publisher": "data.cityofnewyork.us",
+   "slug": "nyc-independent-budget-office-ibo-debt-outstanding-since-fy-2000",
+   "spatial_centroid": null,
+   "spatial_shape": null,
+   "theme": [
+    "City Government"
+   ],
+   "title": "NYC Independent Budget Office (IBO) Debt Outstanding Since FY 2000",
+   "type": "dataset"
+  },
+  {
+   "_score": 51.92566,
+   "_sort": [
+    51.92566,
+    4,
+    "fee27441-9fcd-4816-86bc-91f79bcdf73f"
+   ],
+   "access_level": "public",
+   "dcat": {
+    "@type": "dcat:Dataset",
+    "accessLevel": "public",
+    "contactPoint": {
+     "@type": "vcard:Contact",
+     "fn": "NYC OpenData",
+     "hasEmail": "mailto:no-reply@data.cityofnewyork.us"
+    },
+    "description": "New York City Annual Debt Service Expense from FY2000 \u2013 FY2020\nDollars in millions\n\nSOURCES: IBO; Mayor's Office of Management and Budget (OMB); New York City Comprehensive Annual Financial Report of the Comptroller (various years); Annual Report of the Comptroller on Capital Debt and Obligations (various years); New York City Municipal Water Finance Authority Comprehensive Annual Financial Report (various years).</p>\n\nNOTES:</br>\n(1) Debt service is the cost to New York City of repaying its outstanding debt, including both principal and interest. The figures in the table have been adjusted to",
+    "distribution": [
+     {
+      "@type": "dcat:Distribution",
+      "describedBy": "https://data.cityofnewyork.us/api/views/6ggx-itps/columns.json",
+      "describedByType": "application/json",
+      "downloadURL": "https://data.cityofnewyork.us/api/v3/views/6ggx-itps/query.json?accessType=DOWNLOAD",
+      "mediaType": "application/json"
+     },
+     {
+      "@type": "dcat:Distribution",
+      "describedBy": "https://data.cityofnewyork.us/api/views/6ggx-itps/columns.xml",
+      "describedByType": "application/xml",
+      "downloadURL": "https://data.cityofnewyork.us/api/v3/views/6ggx-itps/query.xml?accessType=DOWNLOAD",
+      "mediaType": "application/xml"
+     },
+     {
+      "@type": "dcat:Distribution",
+      "downloadURL": "https://data.cityofnewyork.us/api/v3/views/6ggx-itps/export.csv?accessType=DOWNLOAD",
+      "mediaType": "text/csv"
+     }
+    ],
+    "identifier": "https://data.cityofnewyork.us/api/views/6ggx-itps",
+    "issued": "2021-06-25",
+    "keyword": [
+     "adjusted debt service expense of outstanding debt as defined by ibo",
+     "conduit debt",
+     "general obligation (go)",
+     "municipal assistance corporation (mac)",
+     "net equity contribution in bond refunding that accrued to future years' debt service savings",
+     "nyc independent budget office (ibo) debt service since fy 2000",
+     "transitional finance authority (tfa)"
+    ],
+    "landingPage": "https://data.cityofnewyork.us/d/6ggx-itps",
+    "modified": "2021-06-25",
+    "publisher": {
+     "@type": "org:Organization",
+     "name": "data.cityofnewyork.us"
+    },
+    "theme": [
+     "City Government"
+    ],
+    "title": "NYC Independent Budget Office (IBO) Debt Service Since FY 2000"
+   },
+   "description": "New York City Annual Debt Service Expense from FY2000 \u2013 FY2020\nDollars in millions\n\nSOURCES: IBO; Mayor's Office of Management and Budget (OMB); New York City Comprehensive Annual Financial Report of the Comptroller (various years); Annual Report of the Comptroller on Capital Debt and Obligations (various years); New York City Municipal Water Finance Authority Comprehensive Annual Financial Report (various years).</p>\n\nNOTES:</br>\n(1) Debt service is the cost to New York City of repaying its outstanding debt, including both principal and interest. The figures in the table have been adjusted to",
+   "distribution_titles": [],
+   "has_download": true,
+   "has_spatial": false,
+   "identifier": "https://data.cityofnewyork.us/api/views/6ggx-itps",
+   "keyword": [
+    "adjusted debt service expense of outstanding debt as defined by ibo",
+    "conduit debt",
+    "general obligation (go)",
+    "municipal assistance corporation (mac)",
+    "net equity contribution in bond refunding that accrued to future years' debt service savings",
+    "nyc independent budget office (ibo) debt service since fy 2000",
+    "transitional finance authority (tfa)"
+   ],
+   "last_harvested_date": "2026-09-10T18:30:25.805171",
+   "organization": {
+    "aliases": [
+     ""
+    ],
+    "code_repo_exempt": false,
+    "code_repo_url": null,
+    "description": null,
+    "id": "1149ee63-2fff-494e-82e5-9aace9d3b3bf",
+    "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/city_new_york_ny.png",
+    "name": "City of New York",
+    "organization_type": "City Government",
+    "slug": "nyc-ny"
+   },
+   "parent_identifier": null,
+   "popularity": 4,
+   "publisher": "data.cityofnewyork.us",
+   "slug": "nyc-independent-budget-office-ibo-debt-service-since-fy-2000",
+   "spatial_centroid": null,
+   "spatial_shape": null,
+   "theme": [
+    "City Government"
+   ],
+   "title": "NYC Independent Budget Office (IBO) Debt Service Since FY 2000",
+   "type": "dataset"
+  },
+  {
+   "_score": 45.329838,
+   "_sort": [
+    45.329838,
+    6,
+    "a48418b9-d44e-4443-8656-c1e46309b214"
+   ],
+   "access_level": "public",
+   "dcat": {
+    "@type": "dcat:Dataset",
+    "accessLevel": "public",
+    "contactPoint": {
+     "@type": "vcard:Contact",
+     "fn": "OpenData",
+     "hasEmail": "mailto:no-reply@data.sf.gov"
+    },
+    "description": "<strong>A. SUMMARY</strong>\nThis dataset provides a financial and schedule-based overview of all active and recently completed San Francisco General Obligation (GO) Bond programs. It tracks the lifecycle of bond-funded projects from voter authorization to final expenditure. The purpose of this data is to ensure transparency in how taxpayer-approved funds are utilized and to monitor  the scope, schedule, and budget of GO Bond funded projects.\n\n<u><a href=\"https://www.sf.gov/departments--citizens-general-obligation-bond-oversight-committee\">You can read more about GO Bonds and Bond oversight her",
+    "distribution": [
+     {
+      "@type": "dcat:Distribution",
+      "describedBy": "https://data.sf.gov/api/views/m793-kis4/columns.json",
+      "describedByType": "application/json",
+      "downloadURL": "https://data.sf.gov/api/v3/views/m793-kis4/query.json?accessType=DOWNLOAD",
+      "mediaType": "application/json"
+     },
+     {
+      "@type": "dcat:Distribution",
+      "describedBy": "https://data.sf.gov/api/views/m793-kis4/columns.xml",
+      "describedByType": "application/xml",
+      "downloadURL": "https://data.sf.gov/api/v3/views/m793-kis4/query.xml?accessType=DOWNLOAD",
+      "mediaType": "application/xml"
+     },
+     {
+      "@type": "dcat:Distribution",
+      "downloadURL": "https://data.sf.gov/api/v3/views/m793-kis4/export.csv?accessType=DOWNLOAD",
+      "mediaType": "text/csv"
+     }
+    ],
+    "identifier": "https://data.sf.gov/api/views/m793-kis4",
+    "issued": "2026-04-24",
+    "keyword": [
+     "bonds",
+     "finance",
+     "go bonds"
+    ],
+    "landingPage": "https://data.sf.gov/d/m793-kis4",
+    "license": "http://opendatacommons.org/licenses/pddl/1.0/",
+    "modified": "2026-04-28",
+    "publisher": {
+     "@type": "org:Organization",
+     "name": "data.sf.gov"
+    },
+    "theme": [
+     "City Management and Ethics"
+    ],
+    "title": "General Obligation (GO) Bonds Program Spending and Status"
+   },
+   "description": "<strong>A. SUMMARY</strong>\nThis dataset provides a financial and schedule-based overview of all active and recently completed San Francisco General Obligation (GO) Bond programs. It tracks the lifecycle of bond-funded projects from voter authorization to final expenditure. The purpose of this data is to ensure transparency in how taxpayer-approved funds are utilized and to monitor  the scope, schedule, and budget of GO Bond funded projects.\n\n<u><a href=\"https://www.sf.gov/departments--citizens-general-obligation-bond-oversight-committee\">You can read more about GO Bonds and Bond oversight her",
+   "distribution_titles": [],
+   "has_download": true,
+   "has_spatial": false,
+   "identifier": "https://data.sf.gov/api/views/m793-kis4",
+   "keyword": [
+    "bonds",
+    "finance",
+    "go bonds"
+   ],
+   "last_harvested_date": "2026-09-02T18:56:16.131065",
+   "organization": {
+    "aliases": [
+     "sf",
+     "california"
+    ],
+    "code_repo_exempt": false,
+    "code_repo_url": null,
+    "description": null,
+    "id": "7f3c6c7a-ef5f-4ee0-87ce-a0300ba767d5",
+    "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/city_san_francisco_ca.png",
+    "name": "City of San Francisco",
+    "organization_type": "City Government",
+    "slug": "san-francisco-ca"
+   },
+   "parent_identifier": null,
+   "popularity": 6,
+   "publisher": "data.sf.gov",
+   "slug": "general-obligation-go-bonds-program-spending-and-status",
+   "spatial_centroid": null,
+   "spatial_shape": null,
+   "theme": [
+    "City Management and Ethics"
+   ],
+   "title": "General Obligation (GO) Bonds Program Spending and Status",
+   "type": "dataset"
+  }
+ ],
+ "sort": "relevance"
+}

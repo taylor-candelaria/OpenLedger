@@ -1,0 +1,38 @@
+{
+  "name": "openledger",
+  "version": "0.1.0",
+  "description": "An editorial guide to U.S. public bonds, Treasury securities and government debt, built on live federal data",
+  "author": "Taylor Candelaria <taylorcandelaria54@protonmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "oxlint src",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@floating-ui/react": "0.27.20",
+    "@fontsource-variable/public-sans": "5.3.0",
+    "@fontsource-variable/source-serif-4": "5.3.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@tanstack/react-query": "5.104.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-is": "19.3.0",
+    "react-router-dom": "7.18.4",
+    "recharts": "3.10.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@vitejs/plugin-react": "6.1.2",
+    "oxlint": "1.88.0",
+    "tailwindcss": "4.3.3",
+    "vite": "8.3.4",
+    "vitest": "4.1.12"
+  }
+}
