@@ -34,6 +34,13 @@ export const CHAPTERS = [
     summary: 'What federal borrowing costs, why Treasuries anchor other rates, and how the debt limit works.',
     load: () => import('./BorrowingAndEconomy.jsx'),
   },
+  {
+    slug: 'history-of-public-debt',
+    number: 6,
+    title: 'A history of public debt',
+    summary: 'How Britain invented modern government borrowing, and how Alexander Hamilton built America’s credit on its model.',
+    load: () => import('./HistoryOfPublicDebt.jsx'),
+  },
 ]
 
 export function chapterBySlug(slug) {

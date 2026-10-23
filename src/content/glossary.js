@@ -537,6 +537,84 @@ export const GLOSSARY = [
     short:
       'The federal itemized deduction for state and local taxes, which is capped. This site’s examples ignore it, which slightly overstates the state-tax advantage for people who can deduct state tax.',
   },
+
+  {
+    id: 'funded-debt',
+    term: 'Funded debt',
+    group: 'History',
+    short:
+      'Debt backed by a specific tax that the law sets aside to pay its interest, so lenders know exactly where their payments will come from.',
+    long: 'Britain’s Parliament funded its war loans this way from the 1690s. Hamilton’s 1790 plan did the same, pledging customs duties and, later, excise taxes to the new federal securities.',
+    related: ['sinking-fund', 'excise'],
+  },
+  {
+    id: 'sinking-fund',
+    term: 'Sinking fund',
+    group: 'History',
+    short: 'Money set aside on a schedule to buy back or repay debt over time, so the debt “sinks” instead of piling up.',
+    long: 'Britain created one in 1717 on a plan by Robert Walpole. Congress created the U.S. Sinking Fund Commission in August 1790, and Hamilton used its purchases to steady the market in 1791 and 1792.',
+    related: ['funded-debt', 'lender-of-last-resort'],
+  },
+  {
+    id: 'consol',
+    term: 'Consol',
+    group: 'History',
+    short:
+      'A British government bond with no maturity date. It paid interest indefinitely, and the government could buy it back whenever it chose.',
+    long: 'Short for “consolidated annuities”: in the early 1750s many separate government loans were merged into a single stock paying 3 percent. Consols traded for more than two and a half centuries; the last were repaid in 2015.',
+    related: ['funded-debt', 'maturity'],
+  },
+  {
+    id: 'assumption',
+    term: 'Assumption',
+    group: 'History',
+    short:
+      'The federal government’s takeover of the states’ Revolutionary War debts in 1790, so creditors looked to the nation rather than to thirteen separate treasuries.',
+    long: 'The Funding Act of 1790 authorized up to $21.5 million of state debt to be assumed. States that had already paid down their debts, such as Virginia, opposed it.',
+    related: ['discrimination'],
+  },
+  {
+    id: 'discrimination',
+    term: 'Discrimination (1790)',
+    group: 'History',
+    short:
+      'James Madison’s proposal to split payment on old war debt between its original holders, such as soldiers, and the buyers who had since bought it cheaply. Congress rejected it.',
+    long: 'Hamilton argued that whoever held a security should be paid in full, because a government that rewrote its promises after the fact would struggle to borrow again.',
+    related: ['assumption'],
+  },
+  {
+    id: 'continental-currency',
+    term: 'Continental currency',
+    group: 'History',
+    short:
+      'Paper money printed by the Continental Congress to pay for the Revolutionary War. So much was issued that by 1780 it was nearly worthless.',
+    long: 'The collapse gave rise to the phrase “not worth a Continental.” The Funding Act of 1790 exchanged the remaining bills for new securities at one dollar for every hundred.',
+    related: ['specie'],
+  },
+  {
+    id: 'specie',
+    term: 'Specie',
+    group: 'History',
+    short: 'Gold and silver coin, as opposed to paper money or IOUs. In the 18th century, a promise to pay was only as good as the specie behind it.',
+  },
+  {
+    id: 'excise',
+    term: 'Excise tax',
+    group: 'History',
+    short:
+      'A tax on a particular good produced at home, such as whiskey, as opposed to a customs duty on imports.',
+    long: 'Hamilton’s 1791 excise on distilled spirits helped pay interest on the federal debt. Resistance to it in western Pennsylvania became the Whiskey Rebellion of 1794.',
+    related: ['funded-debt'],
+  },
+  {
+    id: 'lender-of-last-resort',
+    term: 'Lender of last resort',
+    group: 'History',
+    short:
+      'An institution that steps in during a financial panic to buy securities or lend freely, so that sound borrowers aren’t ruined by a sudden rush for cash.',
+    long: 'Today central banks such as the Federal Reserve play this role. Hamilton did something similar in the Panic of 1792, using sinking-fund money to buy federal securities and backing the Bank of New York’s lending.',
+    related: ['sinking-fund'],
+  },
 ]
 
 export const GLOSSARY_BY_ID = Object.fromEntries(GLOSSARY.map((g) => [g.id, g]))
@@ -549,4 +627,5 @@ export const GLOSSARY_GROUPS = [
   'Public debt',
   'State and local',
   'Savings and taxes',
+  'History',
 ]

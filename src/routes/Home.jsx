@@ -196,7 +196,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section eyebrow="Start with the basics" title="Five chapters, in order">
+      <Section eyebrow="Start with the basics" title="Six chapters, in order">
         <ol className="grid gap-x-12 border-t border-line md:grid-cols-2">
           {CHAPTERS.map((c) => (
             <li key={c.slug} className="border-b border-line">
@@ -214,7 +214,7 @@ export default function Home() {
         </ol>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <p className="text-[1rem] leading-relaxed text-muted">
-            Beyond Washington, states, cities and school districts borrow too, through{' '}
+            Beyond the federal government, states, cities and school districts borrow too, through{' '}
             <Term id="municipal-bond">municipal bonds</Term> with their own tax rules.{' '}
             <Link to="/state-local" className="link">Read about state and local debt</Link>.
           </p>

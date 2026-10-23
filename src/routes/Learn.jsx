@@ -9,7 +9,7 @@ export default function Learn() {
       <PageHeader
         eyebrow="Learn"
         title="Public bonds, from the beginning"
-        lede="Five short chapters that build on each other, from what the national debt is to why bond prices move. Each one has interactive examples and live data, and terms you can tap to define."
+        lede="Six chapters that build on each other, from what the national debt is to why bond prices move, ending with how public borrowing began. Each one has interactive examples and live data, and terms you can tap to define."
       >
         <div className="mt-8">
           <Button to={`/learn/${CHAPTERS[0].slug}`} icon="arrowRight">

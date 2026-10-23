@@ -89,7 +89,8 @@ export default function PublicDebt() {
         <p>
           The result was the first U.S. government debt as we would recognize it, and a reputation for paying on time that made
           later borrowing cheaper. Hamilton saw the debt as a tool as well as a burden: securities the public trusted could
-          circulate like money and bind lenders’ interests to the new government’s success.
+          circulate like money and bind lenders’ interests to the new government’s success. The full story, from London’s
+          financial revolution to Hamilton’s Treasury, is in <Link to="/learn/history-of-public-debt">chapter 6</Link>.
         </p>
         <p>
           Since then the debt has risen sharply in wartime and in recessions, when tax receipts fall and spending on programs
@@ -108,7 +109,7 @@ export default function PublicDebt() {
           disagree, sometimes sharply, about how much is too much. What can be measured precisely is what the debt costs to carry,
           which is the subject of <Link to="/learn/borrowing-and-the-economy">chapter 5</Link>.
         </p>
-        <h2>Not only Washington</h2>
+        <h2>Not only the federal government</h2>
         <p>
           States, cities, counties and school districts borrow too, mostly to build long-lived things like roads, schools and
           water systems. They issue <Term id="municipal-bond">municipal bonds</Term>, which differ from Treasuries in who backs

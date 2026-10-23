@@ -82,6 +82,23 @@ export const REFERENCES = [
       { name: 'FDIC: Deposit insurance', href: 'https://www.fdic.gov/resources/deposit-insurance/' },
     ],
   },
+  {
+    group: 'History of public debt',
+    items: [
+      {
+        name: 'Founders Online: Hamilton, Report Relative to a Provision for the Support of Public Credit (1790)',
+        href: 'https://founders.archives.gov/documents/Hamilton/01-06-02-0076-0002-0001',
+      },
+      { name: 'U.S. Treasury: Alexander Hamilton (1789–1795)', href: 'https://home.treasury.gov/about/history/prior-secretaries/alexander-hamilton-1789-1795' },
+      { name: 'Federal Reserve History: The First Bank of the United States', href: 'https://www.federalreservehistory.org/essays/first-bank-of-the-us' },
+      { name: 'Bank of England: Our history', href: 'https://www.bankofengland.co.uk/about/history' },
+      {
+        name: 'Founders Online: Loan contract with Amsterdam bankers, 11 June 1782 (Adams Papers)',
+        href: 'https://founders.archives.gov/documents/Adams/06-13-02-0062',
+      },
+      { name: 'Treasury Fiscal Data: Historical Debt Outstanding (from 1790)', href: 'https://fiscaldata.treasury.gov/datasets/historical-debt-outstanding/' },
+    ],
+  },
 ]
 
 export const EE_BOND_RATE = {
