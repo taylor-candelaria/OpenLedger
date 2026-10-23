@@ -83,7 +83,6 @@ export async function searchCatalog({ q, orgType, after, perPage = 12, signal })
 const statusResponse = z.object({
   catalog: z.object({ configured: z.boolean(), usingDemoKey: z.boolean() }),
   census: z.object({ configured: z.boolean() }),
-  notes: z.object({ configured: z.boolean() }).optional(),
 })
 
 export async function fetchApiStatus({ signal } = {}) {

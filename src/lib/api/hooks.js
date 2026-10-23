@@ -1,4 +1,4 @@
-import { useInfiniteQuery, useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { useInfiniteQuery, useQuery } from '@tanstack/react-query'
 import { toISODate } from '../format.js'
 import { searchCatalog, fetchApiStatus } from './catalog.js'
 import { discoverDebtSeries, fetchStateDebt } from './census.js'
@@ -16,7 +16,6 @@ import {
   parseInterestByFiscalYear,
   parseOwnership,
 } from './fiscalData.js'
-import { createNote, deleteNote, listNotes, toggleNote, updateNote } from './notes.js'
 import { fetchYieldCurveYear } from './yieldCurve.js'
 
 const HOUR = 60 * 60 * 1000
@@ -209,58 +208,4 @@ export function useDebtLimit() {
       }).then(parseDebtLimit),
     ...DAILY,
   })
-}
-
-const NOTES_KEY = ['notes']
-
-export function useNotes({ enabled }) {
-  return useQuery({
-    queryKey: NOTES_KEY,
-    queryFn: ({ signal }) => listNotes({ signal }),
-    enabled,
-    staleTime: 30 * 1000,
-    retry: (count, err) => ![400, 401, 403, 503].includes(err?.status) && count < 2,
-  })
-}
-
-function useNotesMutation(mutationFn, applyLocally) {
-  const client = useQueryClient()
-  return useMutation({
-    mutationFn,
-    onMutate: async (vars) => {
-      await client.cancelQueries({ queryKey: NOTES_KEY })
-      const previous = client.getQueryData(NOTES_KEY)
-      if (previous && applyLocally) client.setQueryData(NOTES_KEY, applyLocally(previous, vars))
-      return { previous }
-    },
-    onError: (_err, _vars, ctx) => {
-      if (ctx?.previous) client.setQueryData(NOTES_KEY, ctx.previous)
-    },
-    onSettled: () => client.invalidateQueries({ queryKey: NOTES_KEY }),
-  })
-}
-
-export function useCreateNote() {
-  return useNotesMutation(createNote)
-}
-
-export function useUpdateNote() {
-  return useNotesMutation(
-    ({ current, changes }) => updateNote(current, changes),
-    (notes, { current, changes }) => notes.map((n) => (n.id === current.id ? { ...n, ...changes } : n)),
-  )
-}
-
-export function useToggleNote() {
-  return useNotesMutation(
-    (id) => toggleNote(id),
-    (notes, id) => notes.map((n) => (n.id === id ? { ...n, reviewed: !n.reviewed } : n)),
-  )
-}
-
-export function useDeleteNote() {
-  return useNotesMutation(
-    (id) => deleteNote(id),
-    (notes, id) => notes.filter((n) => n.id !== id),
-  )
 }

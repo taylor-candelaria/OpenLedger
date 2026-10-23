@@ -27,7 +27,7 @@ const ORG_LABEL = {
   'City Government': 'City',
 }
 
-export function CatalogExplorer({ onSaveToNotes }) {
+export function CatalogExplorer() {
   const inputId = useId()
   const [draft, setDraft] = useState('municipal bonds')
   const [query, setQuery] = useState({ q: 'municipal bonds', orgType: '' })
@@ -164,18 +164,6 @@ export function CatalogExplorer({ onSaveToNotes }) {
                       </li>
                     ))}
                   </ul>
-                )}
-                {onSaveToNotes && (
-                  <div className="mt-4 border-t border-line pt-3">
-                    <Button
-                      variant="secondary"
-                      size="sm"
-                      onClick={() => onSaveToNotes({ title: d.title, publisher: d.orgName || d.publisher, url: d.url })}
-                      aria-label={`Save to notes: ${d.title}`}
-                    >
-                      Save to notes
-                    </Button>
-                  </div>
                 )}
               </Surface>
             </li>

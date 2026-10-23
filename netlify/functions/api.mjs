@@ -15,8 +15,6 @@ function json(body, status = 200) {
 function upstream(pathname, search) {
   const catalogKey = env('DATA_GOV_API_KEY')
   const censusKey = env('CENSUS_API_KEY')
-  const notesToken = env('SIMPLYCODING_TOKEN')
-  const notesUser = encodeURIComponent(env('SIMPLYCODING_USER') || 'openledger-taylor')
 
   if (pathname.startsWith('/api/catalog')) {
     const rest = pathname.replace(/^\/api\/catalog/, '')
@@ -30,14 +28,6 @@ function upstream(pathname, search) {
     const sep = search ? '&' : '?'
     return { url: `https://api.census.gov${rest}${search}${sep}key=${encodeURIComponent(censusKey)}`, headers: {} }
   }
-  if (pathname.startsWith('/api/notes')) {
-    if (!notesToken) return { error: 'missing_simplycoding_token' }
-    const rest = pathname.replace(/^\/api\/notes/, `/simply/todo/${notesUser}`)
-    return {
-      url: `https://mongodb.simplycodingcourses.com${rest}${search}`,
-      headers: { Authorization: `Bearer ${notesToken}` },
-    }
-  }
   return null
 }
 
@@ -48,7 +38,6 @@ export default async (req) => {
     return json({
       catalog: { configured: Boolean(env('DATA_GOV_API_KEY')), usingDemoKey: false },
       census: { configured: Boolean(env('CENSUS_API_KEY')) },
-      notes: { configured: Boolean(env('SIMPLYCODING_TOKEN')) },
     })
   }
 

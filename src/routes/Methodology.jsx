@@ -52,9 +52,8 @@ export default function Methodology() {
             <p>
               Treasury data comes from the <strong>Fiscal Data API</strong> and Treasury’s daily yield curve files, which the browser
               reads directly. Dataset searches use the <strong>data.gov Catalog API</strong>: through GSA’s api.data.gov gateway
-              when a key is set, and data.gov’s public catalog search otherwise. The <strong>Census Bureau API</strong> and the{' '}
-              <strong>SimplyCoding Todo App API</strong> behind research notes need a key or token. This site’s local server
-              forwards all of these requests and adds any keys itself, keeping them out of the page code.
+              when a key is set, and data.gov’s public catalog search otherwise. The <strong>Census Bureau API</strong> needs a key.
+              This site’s server forwards these requests and adds any keys itself, keeping them out of the page code.
             </p>
             <p>
               Data is cached in your browser for an hour (daily series) or half a day (monthly series). Each chart shows the date of
