@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# The /api/* routes are served by netlify/functions/api.mjs.
+# Everything else falls back to the app so client-side routes survive a refresh.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
